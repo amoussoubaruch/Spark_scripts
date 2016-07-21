@@ -18,7 +18,11 @@ $ hdfs dfs -put 4300.txt /tmp/datafiles                  # Copie d'un fichier da
 $ hdfs dfs -ls /tmp/datafiles                            # Lister tous les fichiers du repertoire
 $ hdfs dfs -chown -R hdfs:hdfs /tmp/datafiles            # Changer les droits sur le fichier root --> hdfs 
 $ hdfs dfs -rm r /tmp/datafiles                          # Suppression du repertoire
+$ hdfs dfs -rmdir  /repertoire                           # Suppression d'un repertroire 
+$ hadoop fs -chmod -R a+rwxX  /repertoire                # Rajouter les droits sur un fichier 
 ```
+
+ 
 
 > Avec les commandes précédentes problèmes de droits : passer enn utilisateur hdfs pour poursuive
 
