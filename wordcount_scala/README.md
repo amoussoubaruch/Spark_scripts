@@ -47,9 +47,3 @@ $ sudo gedit log4j.properties
 ```
 
 > Dans gedit, ligne log4j.rootCategory=INFO, remplacez INFO par WARN
-
-> Enregister un RDD spark dans un fichier text
-
-```sh
-$ file.saveAsTextFile("year")
-``` 
