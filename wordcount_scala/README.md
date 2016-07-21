@@ -19,7 +19,7 @@ $ hdfs dfs -ls /tmp/datafiles                            # Lister tous les fichi
 $ hdfs dfs -chown -R hdfs:hdfs /tmp/datafiles            # Changer les droits sur le fichier root --> hdfs 
 $ hdfs dfs -rm r /tmp/datafiles                          # Suppression du repertoire
 $ hdfs dfs -rmdir  /repertoire                           # Suppression d'un repertroire 
-$ hadoop fs -chmod -R a+rwxX  /repertoire                # Rajouter les droits sur un fichier 
+$ hadoop fs -chmod -R 777  /repertoire                   # Rajouter tous les droits sur un fichier 
 ```
 
  
