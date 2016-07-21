@@ -43,6 +43,8 @@ val wcData = DataDocument.flatMap(l => l.split(" ")).map(word => (word, 1)).redu
 // Affichzer le résultat 
 wcData.collect().foreach(println)
 
+// Enregistrer wcData dans un fichier 
+wcData.saveAsTextFile("compteMots")
 
 // Construire un RDD comprenant seulement les lignes de DataDocument qui contiennent “silence” et retourner un tableau avec ses 2 premiers items :
 
@@ -61,6 +63,7 @@ longueursLignes.take(5)
 DataDocument.map(l => l.length).reduce((a, b) => a + b)
 
 // Important : l’évaluation est “paresseuse” : les opérations sont effectuées seulement quand un résultat doit être retourné
+
 
 
 
